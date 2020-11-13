@@ -192,6 +192,8 @@ crew remove libgcrypt
 python3 -m ensurepip
 pip3 install pyparsing
 pip3 install cryptography
+pip3 install meson
+pip3 install ninja
 
 sudo rm /etc/ld.so.cache
 sudo ldconfig
