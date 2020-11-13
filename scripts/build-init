@@ -352,6 +352,9 @@ tar zcvf ../rootc/packages/swtpm.tar.gz * --owner=0 --group=0
 cd ..
 rm -rf ./swtpm-pkg
 
+# magic spell 4 ncurse
+sudo ln -s /usr/local/lib64/gcc/x86_64-cros-linux-gnu/10.2.0 /usr/local/lib64/gcc/x86_64-cros-linux-gnu/8.3.0
+
 git clone -b master https://github.com/ThomasDickey/ncurses-snapshots.git
 cp -r ./ncurses-snapshots ./source/
 cd ./ncurses-snapshots
