@@ -297,7 +297,7 @@ rm -rf ./spice
 git clone --depth=1 -b master git://git.qemu-project.org/qemu.git
 cp -r ./qemu ./source/
 cd ./qemu
-./configure --prefix=/usr --libdir=/usr/lib64 --target-list=x86_64-softmmu --enable-kvm --enable-spice --enable-linux-aio --enable-usb-redir --audio-drv-list=alsa --disable-guest-agent --disable-curses --disable-nettle
+./configure --prefix=/usr --libdir=/usr/lib64 --target-list=x86_64-softmmu --enable-kvm --enable-spice --enable-linux-aio --enable-usb-redir --audio-drv-list=alsa --disable-guest-agent --disable-curses --disable-nettle  --disable-werror
 make DESTDIR=/home/chronos/qemu-pkg install
 ln -s qemu-system-x86_64 ../qemu-pkg/usr/bin/qemu
 rm -r ../qemu-pkg/usr/include ../qemu-pkg/usr/share/applications ../qemu-pkg/usr/share/icons
